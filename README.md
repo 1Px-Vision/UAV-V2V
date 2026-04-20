@@ -46,6 +46,8 @@ The proposed architecture includes:
 5. **Reaction-diffusion model**  
 Edge-AI diffusion-status predictor executed onboard the UAV (and optionally roadside nodes) using a heterogeneous CPU/FPGA pipeline. The core idea is to model the spatio-temporal spread of safety messages (hazards, evacuation routes, blocked roads) as a reaction–diffusion process over the road network and urban space, then learn a fast surrogate that runs in real time from sparse V2V/UAV observations:
 
+![](https://github.com/1Px-Vision/UAV-V2V/blob/main/Reaction_model.jpg)
+
 ## Key Features
 
 - UAV-assisted message delivery in disrupted road scenarios
