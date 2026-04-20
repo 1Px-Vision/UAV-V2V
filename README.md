@@ -44,9 +44,7 @@ The proposed architecture includes:
    A cluster-based FPGA system accelerates the computational tasks related to diffusion modeling, routing support, or real-time decision updates.
 
 5. **Reaction-diffusion model**  
-   Information dissemination is modeled as a diffusion process to estimate how messages propagate spatially and temporally under network fragmentation.
-
-### Edge-AI diffusion-status predictor executed onboard the UAV (and optionally roadside nodes) using a heterogeneous CPU/FPGA pipeline. The core idea is to model the spatio-temporal spread of safety messages (hazards, evacuation routes, blocked roads) as a reaction–diffusion process over the road network and urban space, then learn a fast surrogate that runs in real time from sparse V2V/UAV observations:
+Edge-AI diffusion-status predictor executed onboard the UAV (and optionally roadside nodes) using a heterogeneous CPU/FPGA pipeline. The core idea is to model the spatio-temporal spread of safety messages (hazards, evacuation routes, blocked roads) as a reaction–diffusion process over the road network and urban space, then learn a fast surrogate that runs in real time from sparse V2V/UAV observations:
 
 ## Key Features
 
