@@ -20,10 +20,10 @@ This approach is intended for emergency communication, intelligent transportatio
 
 During earthquakes, floods, landslides, fires, or large-scale traffic disruptions, terrestrial communication links may fail or become partially unavailable. In these conditions:
 
-- vehicles may be unable to receive important warnings,
-- road disruptions can partition traffic into isolated groups,
+- Vehicles may be unable to receive important warnings,
+- Road disruptions can partition traffic into isolated groups,
 - V2V communication alone may not guarantee full message coverage,
-- low-latency decision support becomes critical.
+- Low-latency decision support becomes critical.
 
 By introducing UAVs as adaptive communication bridges, the system aims to extend the communication range, reconnect fragmented vehicle groups, and maintain the diffusion of critical information such as evacuation routes, hazard alerts, and coordination instructions.
 
@@ -62,12 +62,12 @@ Edge-AI diffusion-status predictor executed onboard the UAV (and optionally road
 
 A typical scenario considered in this project is the following:
 
-- a disaster causes a **road disruption**,
-- direct communication between two vehicle groups becomes impossible,
-- one UAV collects data from a connected vehicle cluster,
-- the UAV moves toward the disconnected region,
-- the message is forwarded to non-receiving vehicles,
-- a remote Cluster-FPGA platform evaluates diffusion behavior and supports optimized dissemination.
+- Disaster causes a **road disruption**,
+- Direct communication between two vehicle groups becomes impossible,
+- One UAV collects data from a connected vehicle cluster,
+- The UAV moves toward the disconnected region,
+- The message is forwarded to non-receiving vehicles,
+- Remote Cluster-FPGA platform evaluates diffusion behavior and supports optimized dissemination.
 
 ## Repository Structure
 
