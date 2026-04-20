@@ -103,6 +103,7 @@ UAV-Aided-Information-Diffusion-for-V2V-in-Disaster-Scenarios/
 └── examples/
     ├── run_simulation.py
     └── demo_scenario.ipynb
+```
 
 ## Inputs
 
@@ -141,7 +142,7 @@ This project is relevant for:
 * cyber-physical systems research.
 * Research Contributions
 
-Possible contributions of this project include:
+### Possible contributions of this project include:
 
 * UAV-assisted strategy for restoring information flow in fragmented V2V environments.
 * Reaction-diffusion formulation for message propagation in disaster conditions.
