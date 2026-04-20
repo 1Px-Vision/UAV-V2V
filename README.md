@@ -2,6 +2,8 @@
 
 UAV-Aided Information Diffusion for V2V in Disaster Scenarios is a research-oriented project that investigates how unmanned aerial vehicles (UAVs) can support information dissemination when conventional vehicle-to-vehicle (V2V) communication is disrupted by disasters, road blockages, or partitioned traffic groups. The framework combines UAV relaying, edge/cloud coordination, and FPGA-accelerated reaction-diffusion modeling to improve message propagation across disconnected vehicle clusters.
 
+![](https://github.com/1Px-Vision/UAV-V2V/blob/main/UAV_V2V.jpg)
+
 ## Overview
 
 In disaster scenarios, direct V2V communication may become unreliable due to damaged infrastructure, blocked roads, network fragmentation, or isolated vehicle groups. This project explores a hybrid architecture where UAVs act as mobile communication assistants, collecting, relaying, and redistributing critical information between non-receiving vehicles and disconnected vehicle groups.
