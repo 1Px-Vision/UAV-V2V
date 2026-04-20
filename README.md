@@ -103,3 +103,47 @@ UAV-Aided-Information-Diffusion-for-V2V-in-Disaster-Scenarios/
 └── examples/
     ├── run_simulation.py
     └── demo_scenario.ipynb
+
+## Inputs
+
+Typical inputs for the framework may include:
+
+* Network or map data.
+* Vehicle positions and mobility traces.
+* UAV initial positions and trajectories.
+* Communication range parameters.
+* Disruption or blockage locations.
+* Message generation events.
+* FPGA deployment or acceleration parameters.
+
+## Outputs
+
+Typical outputs may include:
+
+* Information coverage over time.
+* Delivery ratio to disconnected vehicles.
+* End-to-end dissemination latency.
+* UAV trajectory logs.
+* Diffusion heatmaps.
+* Communication recovery metrics.
+* FPGA processing performance statistics.
+
+
+## Applications
+
+This project is relevant for:
+
+* Disaster response and emergency coordination.
+* Intelligent transportation systems.
+* Resilient V2X communication.
+* UAV-enabled smart mobility.
+* Edge/FPGA acceleration for real-time networked systems.
+* cyber-physical systems research.
+* Research Contributions
+
+Possible contributions of this project include:
+
+* UAV-assisted strategy for restoring information flow in fragmented V2V environments.
+* Reaction-diffusion formulation for message propagation in disaster conditions.
+* FPGA-oriented architecture for accelerating communication-aware computation.
+* Simulation framework for evaluating communication resilience under road disruptions.
