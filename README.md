@@ -1,10 +1,8 @@
-## Simulation Agent-driver V2V
-
-![](https://github.com/1Px-Vision/UAV-V2V/blob/main/V2V_weather.jpg)
-
 # V2V Agent-Driver Traffic Simulation
 
 This project implements a **V2V-enabled agent-driver simulation** for intelligent traffic supervision and collision avoidance. The application models a leader vehicle driving on a multi-lane road under different traffic, congestion, crash, and weather conditions. The leader car uses information from nearby vehicles, UAV/drone supervision, and a DQN-based agent to improve driving decisions.
+
+![](https://github.com/1Px-Vision/UAV-V2V/blob/main/V2V_weather.jpg)
 
 ## Main Features
 
