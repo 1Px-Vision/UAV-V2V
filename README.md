@@ -69,6 +69,11 @@ A typical scenario considered in this project is the following:
 - The message is forwarded to non-receiving vehicles,
 - Remote Cluster-FPGA platform evaluates diffusion behavior and supports optimized dissemination.
 
+## Simulation Agent-driver V2V
+
+![](https://github.com/1Px-Vision/UAV-V2V/blob/main/V2V_weather.jpg)
+
+
 ## Repository Structure
 
 A suggested repository structure is shown below:
