@@ -1,114 +1,37 @@
-# UAV-Aided Information Diffusion for V2V in Disaster Scenarios
-
-UAV-Aided Information Diffusion for V2V in Disaster Scenarios is a research-oriented project that investigates how unmanned aerial vehicles (UAVs) can support information dissemination when conventional vehicle-to-vehicle (V2V) communication is disrupted by disasters, road blockages, or partitioned traffic groups. The framework combines UAV relaying, edge/cloud coordination, and FPGA-accelerated reaction-diffusion modeling to improve message propagation across disconnected vehicle clusters.
-
-![](https://github.com/1Px-Vision/UAV-V2V/blob/main/UAV_V2V.jpg)
-
-## Overview
-
-In disaster scenarios, direct V2V communication may become unreliable due to damaged infrastructure, blocked roads, network fragmentation, or isolated vehicle groups. This project explores a hybrid architecture where UAVs act as mobile communication assistants, collecting, relaying, and redistributing critical information between non-receiving vehicles and disconnected vehicle groups.
-
-The system integrates three main layers:
-
-- **UAV-assisted communication layer** for aerial collection and delivery of messages.
-- **Cluster-FPGA computation layer** for accelerated processing and coordination.
-- **Reaction-diffusion modeling layer** for simulating and optimizing information spread dynamics.
-
-This approach is intended for emergency communication, intelligent transportation systems, and resilient cyber-physical mobility networks.
-
-## Motivation
-
-During earthquakes, floods, landslides, fires, or large-scale traffic disruptions, terrestrial communication links may fail or become partially unavailable. In these conditions:
-
-- Vehicles may be unable to receive important warnings,
-- Road disruptions can partition traffic into isolated groups,
-- V2V communication alone may not guarantee full message coverage,
-- Low-latency decision support becomes critical.
-
-By introducing UAVs as adaptive communication bridges, the system aims to extend the communication range, reconnect fragmented vehicle groups, and maintain the diffusion of critical information such as evacuation routes, hazard alerts, and coordination instructions.
-
-## System Architecture
-
-The proposed architecture includes:
-
-1. **Vehicles and V2V communication**  
-   Vehicles exchange messages locally through V2V links whenever connectivity is available.
-
-2. **UAV relay layer**  
-   UAVs gather information from connected vehicles, move across disrupted areas, and forward messages to isolated vehicles or non-receiving groups.
-
-3. **VPN / network backbone**  
-   A secure communication backbone supports exchange between UAV services and remote processing nodes.
-
-4. **Cluster-FPGA platform**  
-   A cluster-based FPGA system accelerates the computational tasks related to diffusion modeling, routing support, or real-time decision updates.
-
-5. **Reaction-diffusion model**  
-Edge-AI diffusion-status predictor executed onboard the UAV (and optionally roadside nodes) using a heterogeneous CPU/FPGA pipeline. The core idea is to model the spatio-temporal spread of safety messages (hazards, evacuation routes, blocked roads) as a reaction–diffusion process over the road network and urban space, then learn a fast surrogate that runs in real time from sparse V2V/UAV observations:
-
-![](https://github.com/1Px-Vision/UAV-V2V/blob/main/Reaction_model.jpg)
-
-## Key Features
-
-- UAV-assisted message delivery in disrupted road scenarios
-- Support for disconnected and non-receiving vehicle groups
-- V2V information exchange modeling
-- FPGA-oriented acceleration for scalable processing
-- Reaction-diffusion based information propagation analysis
-- Disaster scenario simulation for resilient ITS research
-- Modular design for communication, mobility, and computation experiments
-
-## Example Scenario
-
-A typical scenario considered in this project is the following:
-
-- Disaster causes a **road disruption**,
-- Direct communication between two vehicle groups becomes impossible,
-- One UAV collects data from a connected vehicle cluster,
-- The UAV moves toward the disconnected region,
-- The message is forwarded to non-receiving vehicles,
-- Remote Cluster-FPGA platform evaluates diffusion behavior and supports optimized dissemination.
-
 ## Simulation Agent-driver V2V
 
 ![](https://github.com/1Px-Vision/UAV-V2V/blob/main/V2V_weather.jpg)
 
+# V2V Agent-Driver Traffic Simulation
 
-## Repository Structure
+This project implements a **V2V-enabled agent-driver simulation** for intelligent traffic supervision and collision avoidance. The application models a leader vehicle driving on a multi-lane road under different traffic, congestion, crash, and weather conditions. The leader car uses information from nearby vehicles, UAV/drone supervision, and a DQN-based agent to improve driving decisions.
 
-A suggested repository structure is shown below:
+## Main Features
 
-```bash
-UAV-Aided-Information-Diffusion-for-V2V-in-Disaster-Scenarios/
-│
-├── README.md
-├── requirements.txt
-├── src/
-│   ├── communication/
-│   ├── uav/
-│   ├── v2v/
-│   ├── diffusion_model/
-│   ├── fpga_interface/
-│   └── simulation/
-│
-├── configs/
-│   ├── disaster_scenarios/
-│   ├── network_params/
-│   └── uav_profiles/
-│
-├── data/
-│   ├── maps/
-│   ├── traffic/
-│   └── results/
-│
-├── docs/
-│   ├── architecture.png
-│   └── figures/
-│
-└── examples/
-    ├── run_simulation.py
-    └── demo_scenario.ipynb
-```
+- Multi-lane road traffic simulation
+- Statistical vehicle generation
+- V2V information exchange between connected vehicles
+- UAV/drone-assisted traffic supervision
+- Weather-aware driving conditions: clear, rain, fog, and storm
+- Traffic congestion and crash-event modeling
+- Leader-car decision making using a Deep Q-Network agent
+- Safety shield for lane changes and speed control
+- GIF export for visual analysis
+
+## Application Goal
+
+The objective of this simulator is to evaluate how **V2V communication and an intelligent agent-driver** can improve road safety and traffic efficiency. The leader car receives information about vehicle density, lane risk, crashes, and congestion. Based on this information, the DQN agent selects actions such as maintaining speed, slowing down, accelerating, or changing lanes.
+
+## Agent-Driver Actions
+
+The DQN agent controls the leader vehicle using five high-level actions:
+
+```text
+KEEP
+SLOW
+FAST
+LANE_LEFT
+LANE_RIGHT
 
 ## Inputs
 
