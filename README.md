@@ -24,6 +24,8 @@ The objective of this simulator is to evaluate how **V2V communication and an in
 
 ### Demo Video
 
+![](https://github.com/1Px-Vision/UAV-V2V/blob/main/Testing_V2V_Agent.jpg)
+
 🎥 **Weather + V2V Traffic Simulation**
 
 [Watch the simulation video](https://github.com/1Px-Vision/UAV-V2V/blob/main/Weather_V2V_Traffic_2_V1.mp4)
