@@ -22,7 +22,11 @@ The objective of this simulator is to evaluate how **V2V communication and an in
 
 ## Agent-Driver Actions
 
-![](https://github.com/1Px-Vision/UAV-V2V/blob/main/Weather_V2V_Traffic_2_V1.mp4)
+### Demo Video
+
+🎥 **Weather + V2V Traffic Simulation**
+
+[Watch the simulation video](https://github.com/1Px-Vision/UAV-V2V/blob/main/Weather_V2V_Traffic_2_V1.mp4)
 
 The DQN agent controls the leader vehicle using five high-level actions:
 
